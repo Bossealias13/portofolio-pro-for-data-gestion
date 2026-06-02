@@ -3,7 +3,7 @@
 Bienvenue sur mon portfolio ! Ce site présente mes compétences en analyse de données (BI) et en gestion administrative (ADV). Il a été conçu pour être rapide, accessible et moderne.
 
 ## 🚀 Lien vers le site en ligne
-[Cliquez ici pour voir mon portfolio en action](https://ton-pseudo.github.io/portfolio-data-gestion/)
+[Cliquez ici pour voir mon portfolio en action](https://ton-pseudo.github.io/portofolio-pro-for-data-gestion/)
 
 ## 🎯 À propos
 Ce projet a été réalisé pour mettre en avant ma double compétence :
