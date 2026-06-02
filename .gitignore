@@ -1,0 +1,9 @@
+# Fichiers systèmes (Windows/Mac)
+.DS_Store
+Thumbs.db
+
+# Dossiers d'éditeur (si tu utilises VS Code)
+.vscode/
+
+# Dossiers inutiles
+node_modules/

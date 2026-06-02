@@ -1,0 +1,88 @@
+/* ==========================================================================
+   SOMMAIRE DU FICHIER THEMES.CSS :
+   1. VARIABLES DES THÈMES (Couleurs globales et motifs de fond)
+   2. EFFETS VISUELS : INDEX.HTML (Couleurs interactives pour l'accueil)
+   3. EFFETS VISUELS : EXPERTISES.HTML (Couleurs interactives pour les compétences)
+   ========================================================================== */
+
+/* ==========================================================================
+   1. VARIABLES DES THÈMES (S'applique à tout le site)
+   ========================================================================== */
+
+/* --- THÈME 1 : DATA ANALYST (Ambiance sombre "Matrix") --- */
+.theme-data {
+    --bg-body: #0a0e17;
+    --bg-card: #000000;
+    --text-main: #ffffff;
+    --text-muted: #8b949e;
+    
+    /* Le Vert Menthe et son aura lumineuse */
+    --accent-color: #00ffaa;
+    --accent-glow: rgba(0, 255, 170, 0.15);
+    --border-color: #2d3748;
+
+    /* Motif de fond : Matrice de points (Dot Matrix) */
+    background-color: var(--bg-body);
+    background-image: radial-gradient(rgba(0, 255, 170, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* --- THÈME 2 : ADV & GESTION (Ambiance institutionnelle "Tableur") --- */
+.theme-adv {
+    --bg-body: #1e293b;
+    --bg-card: #0f172a;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    
+    /* L'Ambre Doré et son aura lumineuse */
+    --accent-color: #ff9500;
+    --accent-glow: rgba(255, 149, 0, 0.15);
+    --border-color: rgba(255, 255, 255, 0.08);
+
+    /* Motif de fond : Grille technique (Blueprint) */
+    background-color: var(--bg-body);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+
+/* ==========================================================================
+   2. EFFETS VISUELS : INDEX.HTML (Exclusif à l'Accueil)
+   ========================================================================== */
+
+/* Illumination au survol du bouton "Télécharger mon CV" */
+.btn-primary:hover {
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* Lueur "Dashboard" au survol des cartes KPI (BI, ERP...) */
+.kpi-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+}
+
+
+/* ==========================================================================
+   3. EFFETS VISUELS : EXPERTISES.HTML (Exclusif aux Compétences)
+   ========================================================================== */
+
+/* Lueur technologique au survol des cartes de compétences */
+.skill-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 15px var(--accent-glow);
+}
+
+/* ==========================================================================
+   4. EFFETS VISUELS : PROJETS.HTML (Exclusif aux Projets)
+   ========================================================================== */
+
+/* Lueur technologique et bordure qui s'allume au survol */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 0 15px var(--accent-glow);
+    border-color: var(--accent-color);
+}
+
+/* Le lien devient aux couleurs du thème au survol */
+.btn-secondary:hover {
+    color: var(--accent-color);
+}

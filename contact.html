@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/themes.css">
+
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="theme-data">
+
+    <!-- EN-TÊTE MINIMALISTE -->
+    <header class="main-header header-minimalist">
+        <div class="brand-text-only">
+            <h1 class="brand-name-minimalist">Bosse Christ</h1>
+            <span class="brand-title-minimalist">Data Analyst & Expert ADV</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="expertises.html" class="nav-link">Expertises</a></li>
+                <li class="nav-item"><a href="projets.html" class="nav-link">Projets</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-intro">
+            <h2 class="section-title">Prenons Contact</h2>
+            <p class="pitch">Pour plus d'informations, Compléments ou autres Écrivez-moi directement.</p>
+        </div>
+
+        <section class="contact-grid">
+            <!-- Formulaire Minimaliste -->
+            <form class="contact-form" action="mailto:votre-email@exemple.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Votre Nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Votre Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Votre Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Envoyer le message</button>
+            </form>
+
+            <!-- Liens Sociaux -->
+            <div class="social-links">
+                <a href="mailto:Bossechrist69@gmail.com" class="social-item"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/2250778544813" target="_blank" class="social-item"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/christ-bosse-92208128a/" target="_blank" class="social-item"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Bossealias13" target="_blank" class="social-item"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Bosse Christ. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
