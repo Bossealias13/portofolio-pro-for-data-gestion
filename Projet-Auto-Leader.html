@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Auto-Leader CI | Portfolio</title>
+    <meta name="description" content="Tableau de bord d'analyse commerciale Auto-Leader CI : suivi des commerciaux, taux de conversion et rapidité de signature.">
+
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/themes.css">
+    <script src="./assets/js/app.js" defer></script>
+</head>
+
+<body class="theme-adv">
+
+    <header class="main-header header-minimalist">
+        <div class="brand-text-only">
+            <h1 class="brand-name-minimalist">Bosse Christ</h1>
+            <span class="brand-title-minimalist">Relation Client & Facturation</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="expertises.html" class="nav-link">Expertises</a></li>
+                <li class="nav-item"><a href="projets.html" class="nav-link">Projets</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero" aria-labelledby="project-title">
+            <div class="project-hero-copy">
+                <p class="project-eyebrow">Projet Excel métier</p>
+                <h1 id="project-title" class="project-title">Projet : Tableau de Bord d'Analyse Commerciale & Performance Ventes ("Auto-Leader CI")</h1>
+                <p class="project-tagline">Outil de diagnostic pour analyser l'activité des commerciaux, mesurer le taux de conversion et la durée moyenne de conclusion de vente — construit pour la concession "Auto-Leader CI".</p>
+                <div class="project-badges">
+                    <span class="project-badge">Excel</span>
+                    <span class="project-badge">Taux de conversion</span>
+                    <span class="project-badge">Tableaux dynamiques</span>
+                    <span class="project-badge">Dashbord</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section project-context" aria-labelledby="context-title">
+            <div class="project-section-card">
+                <h2 id="context-title" class="section-title">Contexte & Objectif</h2>
+                <p>Au sein de la concession automobile "Auto-Leader CI", un arbitrage était nécessaire entre le service Marketing et la Direction Commerciale pour évaluer l'efficacité réelle de l'équipe de vente face aux prospects générés.</p>
+                <p>L'objectif était de construire un tableau de bord clair pour analyser l'activité d'Amadou, Koffi et Sarah, mesurer leur taux de conversion et calculer la durée moyenne nécessaire pour conclure une vente.</p>
+            </div>
+            <aside class="project-summary-card">
+                <h3>Valeur ajoutée métier</h3>
+                <ul>
+                    <li>Diagnostic rapide de la performance commerciale</li>
+                    <li>Priorisation des actions managériales (formation/mentorat)</li>
+                    <li>Visualisation des gains/pertes financières</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="project-section project-process" aria-labelledby="process-title">
+            <h2 id="process-title" class="section-title">Processus Technique & Métier</h2>
+            <div class="process-grid">
+                <article class="process-block">
+                    <h3>Nettoyage & Modélisation des Données</h3>
+                    <ul>
+                        <li>Calcul automatique des cycles entre premier contact et vente validée.</li>
+                        <li>Structuration d'une matrice croisée vendeurs / statuts pour synthétiser l'activité.</li>
+                        <li>Préservation de la pérennité des formules pour intégration continue de nouvelles lignes CRM.</li>
+                    </ul>
+                </article>
+                <article class="process-block">
+                    <h3>Analyse & Suivi de la Performance</h3>
+                    <ul>
+                        <li>Calcul des taux de conversion par commercial (Ventes signées / Prospects traités).</li>
+                        <li>Mise en forme conditionnelle pour mettre en évidence les meilleurs taux.</li>
+                        <li>Indicateurs de rapidité de conversion pour prioriser les bonnes pratiques.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-section project-solution" aria-labelledby="solution-title">
+            <h2 id="solution-title" class="section-title">Solution décisionnelle</h2>
+            <p class="project-tagline">Tableau de pilotage réunissant : volume financier, taux de conversion et rapidité d'exécution — conçu pour donner une action immédiate au Directeur Général.</p>
+        </section>
+
+        <section class="project-section project-media" aria-labelledby="media-title">
+            <h2 id="media-title" class="section-title">Visuels & démonstrations</h2>
+            <div class="project-media-grid">
+                <figure class="project-media-card media-zoom-wrapper">
+                    <img src="./assets/images/Projet-Auto-Leader-CI/dashbord-Auto-Leader%20CI.png" alt="Dashboard Auto-Leader CI" loading="lazy" data-full="./assets/images/Projet-Auto-Leader-CI/dashbord-Auto-Leader%20CI.png">
+                    <button class="media-zoom-btn" aria-label="Agrandir l'image">🔍</button>
+                    <div class="media-zoom-hint">🔍 Cliquez pour agrandir</div>
+                    <figcaption>Dashboard : performance ventes & taux de conversion</figcaption>
+                </figure>
+
+                <figure class="project-media-card project-video-card">
+                    <video muted loop playsinline preload="metadata" poster="./assets/images/Projet-Auto-Leader-CI/dashbord-Auto-Leader%20CI.png" data-src="./assets/videos/reporting-dashbord-Auto-Leader%20CI.mp4" controls controlsList="nodownload nofullscreen noremoteplayback">
+                        <source type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture vidéo.
+                    </video>
+                    <figcaption>Vidéo : démonstration dynamique du dashboard</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="modal-lightbox" role="dialog" aria-hidden="true" aria-label="Agrandir l'image">
+        <button class="modal-close" aria-label="Fermer">✕</button>
+        <div class="modal-content">
+            <img src="" alt="Agrandissement">
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Bosse Christ. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="mailto:Bossechrist69@gmail.com" target="_blank">E-mail</a> 
+                <a href="https://www.linkedin.com/in/christ-bosse-92208128a/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Bossealias13" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -129,16 +129,20 @@ main {
 
 /* CV Timeline */
 .cv-grid { display: grid; grid-template-columns: 1fr; gap: 40px; }
-.cv-subtitle { color: var(--accent-color); margin-bottom: 20px; font-size: 1.2rem; }
-.timeline { border-left: 2px solid var(--border-color); padding-left: 20px; display: flex; flex-direction: column; gap: 25px; }
-.timeline-item { position: relative; }
+.cv-column {
+    background: var(--bg-card); border: 1px solid var(--border-color);
+    border-radius: 16px; padding: 32px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.cv-subtitle { color: var(--accent-color); margin-bottom: 24px; font-size: 1.2rem; font-weight: 700; }
+.timeline { padding-left: 0; display: flex; flex-direction: column; gap: 28px; }
+.timeline-item { position: relative; padding-left: 0; }
 .timeline-item::before {
-    content: ''; position: absolute; left: -27px; top: 5px; width: 12px; height: 12px;
+    content: ''; position: absolute; left: 0; top: 8px; width: 12px; height: 12px;
     border-radius: 50%; background-color: var(--accent-color);
 }
-.timeline-role { color: var(--text-main); font-size: 1.1rem; margin-bottom: 5px; }
-.timeline-date { display: block; font-size: 0.85rem; color: var(--accent-color); margin-bottom: 10px; }
-.timeline-text { color: var(--text-muted); font-size: 0.95rem; }
+.timeline-role { color: var(--text-main); font-size: 1.1rem; margin-bottom: 6px; font-weight: 600; margin-left: 24px; }
+.timeline-date { display: block; font-size: 0.85rem; color: var(--accent-color); margin-bottom: 10px; margin-left: 24px; }
+.timeline-text { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-left: 24px; }
 
 
 /* ==========================================================================
@@ -302,6 +306,254 @@ main {
     transform: scale(1.2);
 }
 
+/* ==========================================================================
+   DEBUT PROJET IVOIRE ELECTRO
+   ========================================================================== */
+.project-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-bottom: 10px;
+}
+
+.project-eyebrow {
+    display: inline-flex;
+    color: var(--accent-color);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project-title {
+    font-size: clamp(2rem, 2.4vw, 2.6rem);
+    color: var(--text-main);
+    line-height: 1.1;
+    max-width: 900px;
+}
+
+.project-tagline {
+    color: var(--text-muted);
+    max-width: 920px;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.project-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.project-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: var(--text-main);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 10px 16px;
+}
+
+.project-section {
+    display: grid;
+    gap: 24px;
+}
+
+.project-context {
+    grid-template-columns: 1fr;
+}
+
+.project-section-card,
+.project-summary-card,
+.process-block,
+.project-media-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+}
+
+.project-section-card,
+.process-block,
+.project-summary-card {
+    padding: 28px;
+}
+
+/* Assure que le texte des cartes de projet est lisible sur thème sombre */
+.project-section-card { color: var(--text-main); }
+
+.project-summary-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.project-summary-card h3 {
+    color: var(--accent-color);
+    font-size: 1.05rem;
+}
+
+.project-summary-card ul {
+    list-style: none;
+    display: grid;
+    gap: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.project-summary-card li {
+    position: relative;
+    padding-left: 24px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+.project-summary-card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-color);
+}
+
+.process-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.process-block h3 {
+    color: var(--accent-color);
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+}
+
+.process-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+}
+
+.process-block li {
+    color: var(--text-muted);
+    line-height: 1.75;
+    padding-left: 20px;
+    position: relative;
+}
+
+.process-block li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.8rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent-color);
+}
+
+.project-media-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.project-media-card {
+    overflow: hidden;
+}
+
+.project-media-card img,
+.project-media-card video {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: #050816;
+}
+
+.project-media-card figcaption {
+    padding: 18px 18px 20px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-video-card video {
+    min-height: 220px;
+}
+
+/* Lightbox / Modal pour agrandir les images */
+.media-zoom-wrapper { position: relative; }
+.media-zoom-btn {
+    position: absolute; right: 12px; top: 12px;
+    background: rgba(0,0,0,0.45); color: #fff; border: 0;
+    padding: 8px 10px; border-radius: 8px; font-size: 0.95rem;
+    display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+}
+.media-zoom-btn:hover { background: rgba(0,0,0,0.6); }
+.media-zoom-hint {
+    display: none; position: absolute; right: 12px; top: 44px;
+    background: rgba(0,0,0,0.7); color: #fff; padding: 6px 10px; border-radius: 6px; font-size: 0.85rem; white-space: nowrap;
+}
+.media-zoom-wrapper:hover .media-zoom-hint,
+.media-zoom-btn:focus + .media-zoom-hint { display: block; }
+
+.modal-lightbox { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(0,0,0,0.8); z-index: 2000; padding: 20px; }
+.modal-lightbox.open { display: flex; }
+.modal-content { max-width: 100%; max-height: 100%; position: relative; }
+.modal-content img { width: auto; max-width: 100%; max-height: calc(100vh - 80px); border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+.modal-close { position: absolute; top: 16px; right: 16px; background: rgba(255,255,255,0.06); color: var(--text-main); border: 0; padding: 8px 10px; border-radius: 8px; cursor: pointer; }
+
+@media (min-width: 860px) {
+    .project-context {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .project-media-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+    }
+}
+
+@media (max-width: 640px) {
+    .project-title {
+        font-size: 1.85rem;
+    }
+
+    .project-badges {
+        gap: 10px;
+    }
+}
+
+/* --- FIN PROJET IVOIRE ELECTRO --- */
+/* --- DEBUT PROJET Auto-Leader CI --- */
+.project-hero.project-auto-leader { padding-bottom: 8px; }
+.project-hero.project-auto-leader .project-eyebrow { color: var(--accent-color); }
+.project-hero.project-auto-leader .project-title { font-size: clamp(1.9rem, 2.2vw, 2.4rem); }
+
+.project-solution .project-tagline { max-width: 900px; color: var(--text-muted); }
+
+.project-media-grid { gap: 18px; }
+
+.project-media-card.media-zoom-wrapper img { border-radius: 8px; border: 1px solid var(--border-color); }
+
+/* légère mise en évidence au survol pour la carte contenant le dashboard */
+.media-zoom-wrapper:hover { box-shadow: 0 8px 18px rgba(0,0,0,0.45); transform: translateY(-4px); }
+
+@media (min-width: 860px) {
+    .project-media-grid { grid-template-columns: 1fr 1fr; }
+    .project-hero.project-auto-leader { flex-direction: row; gap: 30px; }
+}
+
+/* --- FIN PROJET Auto-Leader CI --- */
 
 /* ==========================================================================
    4. RESPONSIVE DESKTOP (Écrans larges)
