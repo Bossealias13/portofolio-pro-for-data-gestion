@@ -87,7 +87,7 @@ main {
     flex: 1; display: flex; align-items: center; justify-content: center;
     text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.85rem; transition: color 0.3s ease;
 }
-.nav-link.active, .nav-link:hover { color: var(--accent-color); }
+.nav-link.active, .nav-link:hover, .nav-link[aria-current="page"] { color: var(--accent-color); }
 
 /* --- FOOTER GLOBAL --- */
 .main-footer {
